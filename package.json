@@ -1,0 +1,53 @@
+{
+  "name": "field",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "server": "tsx --env-file=.env server/main.ts",
+    "server:migrate": "tsx --env-file=.env server/main.ts --migrate",
+    "test:server": "tsx --test server/*.test.ts",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "tsx --test src/wallet/*.test.ts src/protocol/*.test.ts",
+    "test:escrow": "cargo test --workspace --locked -- --test-threads=1",
+    "build:escrow": "target/toolchain/bin/cargo-build-sbf --manifest-path programs/field-escrow/Cargo.toml --arch v0 --tools-version v1.57 -- --locked",
+    "test:escrow:runtime": "npm run build:escrow && cargo test --manifest-path tests/escrow-runtime/Cargo.toml --locked -- --test-threads=1",
+    "check:all": "npm run check && npm run test:server && npm run test:escrow && npm run test:escrow:runtime",
+    "test:e2e": "playwright test",
+    "check": "npm run build && npm test && npm run test:e2e"
+  },
+  "dependencies": {
+    "@solana/wallet-standard-features": "1.5.0",
+    "@solana/web3.js": "1.99.0",
+    "@wallet-standard/app": "1.1.1",
+    "@wallet-standard/base": "1.1.1",
+    "@wallet-standard/features": "1.1.1",
+    "bs58": "6.0.0",
+    "buffer": "6.0.3",
+    "fastify": "^5.12.5",
+    "pg": "^8.23.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "zod": "4.6.5"
+  },
+  "overrides": {
+    "@solana/web3.js": {
+      "jayson": "5.0.0"
+    }
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "^22.0.0",
+    "@types/pg": "^8.23.1",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vite": "8.3.2"
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "task": {
+    "schemaVersion": 1,
+    "id": "00112233-4455-4677-8899-aabbccddeeff",
+    "kind": "cafe-laptop-check",
+    "network": "solana:devnet",
+    "escrowProgram": "8nxj7c8hn9hhqBE6GrBeNLNEiBJrUHhyFo6wmuxmc7hr",
+    "cafe": {
+      "name": "Кафе Étage",
+      "address": "Москва, Примерная улица, 1"
+    },
+    "requester": "GmaDrppBC7P5ARKV8g3djiwP89vz1jLK23V2GBjuAEGB",
+    "executor": "2KW2XRd9kwqet15Aha2oK3tYvd3nWbTFH1MBiRAv1BE1",
+    "reviewer": "J2xccRtuG43drESLYznHhLhQkLTdfepcKYbiQ9BsJVaf",
+    "priceLamports": "1000000",
+    "issuedAt": 1800000000,
+    "quoteExpiry": 1800000100,
+    "executionDeadline": 1800000200,
+    "reviewDeadline": 1800000300,
+    "resolutionDeadline": 1800000400
+  },
+  "report": {
+    "schemaVersion": 1,
+    "taskId": "00112233-4455-4677-8899-aabbccddeeff",
+    "taskHash": "3b56d636bea15a93df252660a8ae613dcd6144b878fdede3026595ac16c18279",
+    "executor": "2KW2XRd9kwqet15Aha2oK3tYvd3nWbTFH1MBiRAv1BE1",
+    "reportedAt": 1800000050,
+    "observations": {
+      "freeTable": {
+        "attempted": true,
+        "answer": "no",
+        "source": "observation",
+        "observedAt": 1800000010,
+        "reason": ""
+      },
+      "laptopAllowed": {
+        "attempted": true,
+        "answer": "yes",
+        "source": "staff",
+        "observedAt": 1800000020,
+        "reason": ""
+      },
+      "guestWifi": {
+        "attempted": true,
+        "answer": "unknown",
+        "source": "staff",
+        "observedAt": 1800000030,
+        "reason": "Сотрудник не смог подтвердить наличие гостевой сети"
+      },
+      "outlet": {
+        "attempted": true,
+        "answer": "unknown",
+        "source": "unavailable",
+        "observedAt": 1800000040,
+        "reason": "Не удалось осмотреть места у стены"
+      }
+    },
+    "notes": "Наличие места может измениться до прихода."
+  },
+  "taskBytesHex": "4669656c642f7461736b2f7631000d000000736f6c616e613a6465766e657473c7f460747879fc13f69649d7a37b30e6e14be05c4c86fdfa158c498bdae2b100112233445546778899aabbccddeeffea4a6c63e29c520abef5507b132ec5f9954776aebebe7b92421eea691446d22c1398f62c6d1a457c51ba6a4b5f3dbd2f69fca93216218dc8997e416bd17d93cafd1724385aa0c75b64fb78cd602fa1d991fdebf76b13c58ed702eac835e9f61840420f000000000000d2496b0000000064d2496b00000000c8d2496b000000002cd3496b0000000090d3496b000000000f000000d09ad0b0d184d0b520c389746167652e000000d09cd0bed181d0bad0b2d0b02c20d09fd180d0b8d0bcd0b5d180d0bdd0b0d18f20d183d0bbd0b8d186d0b02c2031",
+  "taskHash": "3b56d636bea15a93df252660a8ae613dcd6144b878fdede3026595ac16c18279",
+  "reportBytesHex": "4669656c642f7265706f72742f76310000112233445546778899aabbccddeeff3b56d636bea15a93df252660a8ae613dcd6144b878fdede3026595ac16c182791398f62c6d1a457c51ba6a4b5f3dbd2f69fca93216218dc8997e416bd17d93ca32d2496b000000000101000ad2496b000000000000000001000114d2496b00000000000000000102011ed2496b0000000060000000d0a1d0bed182d180d183d0b4d0bdd0b8d0ba20d0bdd0b520d181d0bcd0bed0b320d0bfd0bed0b4d182d0b2d0b5d180d0b4d0b8d182d18c20d0bdd0b0d0bbd0b8d187d0b8d0b520d0b3d0bed181d182d0b5d0b2d0bed0b920d181d0b5d182d0b801020228d2496b000000003f000000d09dd0b520d183d0b4d0b0d0bbd0bed181d18c20d0bed181d0bcd0bed182d180d0b5d182d18c20d0bcd0b5d181d182d0b020d18320d181d182d0b5d0bdd18b4e000000d09dd0b0d0bbd0b8d187d0b8d0b520d0bcd0b5d181d182d0b020d0bcd0bed0b6d0b5d18220d0b8d0b7d0bcd0b5d0bdd0b8d182d18cd181d18f20d0b4d0be20d0bfd180d0b8d185d0bed0b4d0b02e",
+  "reportHash": "89bacc6dd55469e27f32838ecf75f8ce848b3b8ac785d8a87247cf64b2b47a6d",
+  "escrowAddress": "EMbwjB2A1ajSukoxKdZRAfviXP2wRYkdRRyuyaTgLV9z",
+  "fundedAccountHex": "1fd57bbbba16da9b0100112233445546778899aabbccddeeff3b56d636bea15a93df252660a8ae613dcd6144b878fdede3026595ac16c18279ea4a6c63e29c520abef5507b132ec5f9954776aebebe7b92421eea691446d22c1398f62c6d1a457c51ba6a4b5f3dbd2f69fca93216218dc8997e416bd17d93cafd1724385aa0c75b64fb78cd602fa1d991fdebf76b13c58ed702eac835e9f61840420f000000000064d2496b00000000c8d2496b000000002cd3496b0000000090d3496b0000000001d2496b00000000000000000000000000000000000000000000000000000000000000000000000000ff",
+  "instructions": {
+    "fund": {
+      "dataHex": "dabc6fdd9871ae0700112233445546778899aabbccddeeff3b56d636bea15a93df252660a8ae613dcd6144b878fdede3026595ac16c182791398f62c6d1a457c51ba6a4b5f3dbd2f69fca93216218dc8997e416bd17d93cafd1724385aa0c75b64fb78cd602fa1d991fdebf76b13c58ed702eac835e9f61840420f000000000064d2496b00000000c8d2496b000000002cd3496b0000000090d3496b00000000",
+      "accounts": [
+        {
+          "address": "EMbwjB2A1ajSukoxKdZRAfviXP2wRYkdRRyuyaTgLV9z",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "GmaDrppBC7P5ARKV8g3djiwP89vz1jLK23V2GBjuAEGB",
+          "signer": true,
+          "writable": true
+        },
+        {
+          "address": "11111111111111111111111111111111",
+          "signer": false,
+          "writable": false
+        }
+      ]
+    },
+    "submit_report": {
+      "dataHex": "1bb24009142efa0e89bacc6dd55469e27f32838ecf75f8ce848b3b8ac785d8a87247cf64b2b47a6d",
+      "accounts": [
+        {
+          "address": "EMbwjB2A1ajSukoxKdZRAfviXP2wRYkdRRyuyaTgLV9z",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "2KW2XRd9kwqet15Aha2oK3tYvd3nWbTFH1MBiRAv1BE1",
+          "signer": true,
+          "writable": false
+        }
+      ]
+    },
+    "accept_and_release": {
+      "dataHex": "b237e507c71ff4af89bacc6dd55469e27f32838ecf75f8ce848b3b8ac785d8a87247cf64b2b47a6d",
+      "accounts": [
+        {
+          "address": "EMbwjB2A1ajSukoxKdZRAfviXP2wRYkdRRyuyaTgLV9z",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "GmaDrppBC7P5ARKV8g3djiwP89vz1jLK23V2GBjuAEGB",
+          "signer": true,
+          "writable": false
+        },
+        {
+          "address": "2KW2XRd9kwqet15Aha2oK3tYvd3nWbTFH1MBiRAv1BE1",
+          "signer": false,
+          "writable": true
+        }
+      ]
+    },
+    "open_dispute": {
+      "dataHex": "8919637717dfa12a",
+      "accounts": [
+        {
+          "address": "EMbwjB2A1ajSukoxKdZRAfviXP2wRYkdRRyuyaTgLV9z",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "GmaDrppBC7P5ARKV8g3djiwP89vz1jLK23V2GBjuAEGB",
+          "signer": true,
+          "writable": false
+        }
+      ]
+    },
+    "resolve_paid": {
+      "dataHex": "f696ecce6c3f3a0a01",
+      "accounts": [
+        {
+          "address": "EMbwjB2A1ajSukoxKdZRAfviXP2wRYkdRRyuyaTgLV9z",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "J2xccRtuG43drESLYznHhLhQkLTdfepcKYbiQ9BsJVaf",
+          "signer": true,
+          "writable": false
+        },
+        {
+          "address": "GmaDrppBC7P5ARKV8g3djiwP89vz1jLK23V2GBjuAEGB",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "2KW2XRd9kwqet15Aha2oK3tYvd3nWbTFH1MBiRAv1BE1",
+          "signer": false,
+          "writable": true
+        }
+      ]
+    },
+    "resolve_refunded": {
+      "dataHex": "f696ecce6c3f3a0a00",
+      "accounts": [
+        {
+          "address": "EMbwjB2A1ajSukoxKdZRAfviXP2wRYkdRRyuyaTgLV9z",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "J2xccRtuG43drESLYznHhLhQkLTdfepcKYbiQ9BsJVaf",
+          "signer": true,
+          "writable": false
+        },
+        {
+          "address": "GmaDrppBC7P5ARKV8g3djiwP89vz1jLK23V2GBjuAEGB",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "2KW2XRd9kwqet15Aha2oK3tYvd3nWbTFH1MBiRAv1BE1",
+          "signer": false,
+          "writable": true
+        }
+      ]
+    },
+    "refund": {
+      "dataHex": "0260b7fb3fd02e2e",
+      "accounts": [
+        {
+          "address": "EMbwjB2A1ajSukoxKdZRAfviXP2wRYkdRRyuyaTgLV9z",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "GmaDrppBC7P5ARKV8g3djiwP89vz1jLK23V2GBjuAEGB",
+          "signer": true,
+          "writable": true
+        }
+      ]
+    }
+  }
+}

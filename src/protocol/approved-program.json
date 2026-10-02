@@ -1,0 +1,8 @@
+{
+  "network": "solana:devnet",
+  "genesis": "EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG",
+  "program": "8nxj7c8hn9hhqBE6GrBeNLNEiBJrUHhyFo6wmuxmc7hr",
+  "sha256": "680751f4c170198a939948ce05a4876cfe740b71322a93e00b069d66eaa37d6d",
+  "byteLength": 237744,
+  "upgradeAuthority": "AJnavrt2Dq4WsNhx9FjFsXuqXV93HQCooYgNbpD1GTxs"
+}

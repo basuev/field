@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:18-alpine
+    environment:
+      POSTGRES_USER: field
+      POSTGRES_PASSWORD: field_local_only
+      POSTGRES_DB: field
+    ports:
+      - "127.0.0.1:54329:5432"
+    volumes:
+      - field_postgres_data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U field -d field"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  field_postgres_data:
